@@ -1,8 +1,7 @@
-# React + Vite
+# ReelCine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+API Used: The Movie Database (TMDB) API
 
-Currently, two official plugins are available:
+Developed by: Phoenix7290
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Date: August 26, 2024 – December 2, 2024
