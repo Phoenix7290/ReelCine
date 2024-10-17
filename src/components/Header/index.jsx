@@ -35,12 +35,12 @@ const Header = () => {
   return (
     <header className="bg-white dark:bg-gray-800 shadow-md p-4 flex justify-between items-center border-b-2 dark:border-gray-700">
       <h1 className="text-3xl font-bold text-gray-900 dark:text-white">ReelCine</h1>
-      <div className="md:hidden">
+      <hgroup className="md:hidden">
         <IoMenu
           onClick={handleMenu}
           className="text-3xl cursor-pointer text-gray-900 dark:text-white"
         />
-      </div>
+      </hgroup>
       <nav className={`md:flex ${menuIsActive ? 'block' : 'hidden'} absolute md:static top-16 left-0 w-full md:w-auto bg-white dark:bg-gray-800 md:bg-transparent`}>
         <ul className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-10 p-4 md:p-0">
           <li>
