@@ -36,3 +36,19 @@ export const fetchTVs = async () => {
         return [];
     }
 };
+
+export const searchMulti = async () => {
+    try {
+        const response = await axios.get(`${BASE_URL}//search/multi`, {
+            params: {
+                api_key: API_KEY,
+                language: userLanguage,
+                page: 1
+            }
+        });
+        return response.data.results;
+    } catch (error) {
+        console.error('Error fetching movies:', error);
+        return [];
+    }
+};
