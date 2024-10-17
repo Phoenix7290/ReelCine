@@ -2,15 +2,15 @@ import PropTypes from "prop-types";
 
 const TVCard = ({ tv }) => {
   return (
-    <div className=" bg-white shadow-md rounded-lg overflow-hidden">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
       <img
         src={`https://image.tmdb.org/t/p/w500${tv.poster_path}`}
         alt={`${tv.name} poster`}
-        className="__image w-full h-64 object-cover"
+        className="w-full h-auto object-cover"
       />
       <div className="p-4">
-        <h2 className="text-gray-700 text-xl font-bold mb-2">{tv.name}</h2>
-        <p className="text-gray-900 font-semibold">Rating: {tv.vote_average}</p>
+        <h2 className="text-xl font-bold text-gray-900 dark:text-white">{tv.name}</h2>
+        <p className="text-yellow-500 font-semibold">Rating: {tv.vote_average}</p>
       </div>
     </div>
   );
