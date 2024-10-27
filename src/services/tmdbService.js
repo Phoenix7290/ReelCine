@@ -37,18 +37,34 @@ export const fetchTVs = async () => {
     }
 };
 
-export const searchMulti = async () => {
+export const searchMulti = async (query) => {
     try {
-        const response = await axios.get(`${BASE_URL}//search/multi`, {
+        const response = await axios.get(`${BASE_URL}/search/multi`, {
             params: {
                 api_key: API_KEY,
                 language: userLanguage,
+                query, 
                 page: 1
             }
         });
         return response.data.results;
     } catch (error) {
-        console.error('Error fetching movies:', error);
+        console.error('Error fetching search results:', error);
         return [];
+    }
+};
+
+export const fetchMovieDetails = async (id) => {
+    try {
+        const response = await axios.get(`${BASE_URL}/movie/${id}`, {
+            params: {
+                api_key: API_KEY,
+                language: userLanguage,
+            }
+        });
+        return response.data;
+    } catch (error) {
+        console.error('Error fetching movie details:', error);
+        return null;
     }
 };
