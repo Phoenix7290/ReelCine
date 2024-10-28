@@ -52,7 +52,12 @@ const Header = () => {
           <li>
             <Link to="/ReelCine/" className="text-lg text-gray-900 dark:text-white">{t('home')}</Link>
           </li>
-          <SearchLens />
+          <li>
+            <SearchLens />
+          </li>
+          <li>
+            <Link to="/ReelCine/login">{t('login')}</Link>
+          </li>
           <li>
             <button 
               onClick={toggleTheme}

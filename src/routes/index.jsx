@@ -7,6 +7,7 @@ import Home from "../pages/Home";
 import Search from "../pages/Search";
 import NotFound from "../pages/NotFound";
 import MovieDetails from "../pages/MultiDetails";
+import Login from "../pages/Login";
 
 const router = createBrowserRouter([
     {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
     {
         path: "/ReelCine/movie/:id",
         element: <MovieDetails />,
+    },
+    {
+        path: "/ReelCine/login",
+        element: <Login />,
     },
     {
         path: "*",
