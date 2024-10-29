@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
             <div className="p-4">
                 <h2 className="text-xl font-bold text-gray-900 dark:text-white">{movie.title}</h2>
                 <p className="text-gray-700 dark:text-gray-300">{movie.release_date}</p>
-                <p className="text-yellow-500 font-semibold">Rating: {movie.vote_average}</p>
+                <p className="text-red-600 font-semibold">Rating: {movie.vote_average}</p>
             </div>
         </div>
     );

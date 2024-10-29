@@ -1,0 +1,9 @@
+{
+    "short-name": "ReelCine",
+    "name": "ReelCine - Movie Dashboard",
+    "start_url": "/ReelCine/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#ffffff"
+}
