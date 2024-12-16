@@ -7,7 +7,7 @@ import Home from "../pages/Home";
 import Search from "../pages/Search";
 import NotFound from "../pages/NotFound";
 import MovieDetails from "../pages/MultiDetails";
-import Login from "../pages/Login";
+import Login from "../pages/login";
 
 const router = createBrowserRouter([
     {

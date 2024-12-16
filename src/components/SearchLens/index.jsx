@@ -10,7 +10,7 @@ const SearchLens = () => {
     const value = event.target.value;
     setQuery(value);
 
-    if (value.length > 2) { // Iniciar busca após 3 caracteres
+    if (value.length > 2) { 
       const searchResults = await searchMulti(value);
       setResults(searchResults);
     } else {
